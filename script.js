@@ -58,6 +58,7 @@ function newGame(){
     timer.style.width = '100%';
     score = 0;
     timesClicked = 0;
+    window.scrollTo(0,0);
     newTarget()
 }
 
