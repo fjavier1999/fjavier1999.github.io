@@ -1,0 +1,123 @@
+/* Variables */
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: #3475B9;
+    display: block;
+}
+
+/* Header and score styling */
+
+#header{
+    background-color: #204A76;
+    margin-top:-10px;
+    margin-left: -10px;
+    margin-top: -20px;
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+}
+
+#header .score{
+    color: white;
+    margin-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Playground styling */
+
+.main {
+    border: solid white;
+    border-width: 0px;
+    width: 100%;
+    height: 80vh;
+    margin: auto;
+}
+
+/* Target styling */
+
+#target{
+    position: relative;
+    transition: opacity 0.1s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#target img{
+    height: 150px;
+    width: 150px;
+}
+
+@media only screen and (max-width: 768px){
+    #target img{
+        height: 100px;
+        width: 100px;
+    }    
+}
+
+/* Init modal */
+
+.start-game{
+    position: fixed;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #3475B9;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+}
+
+.start-game.closed{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.start-game h1{
+    color: white;
+    font-size: 50px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.start-game button{
+    background: white;
+    color: #3475B9;
+    font-size: 25px;
+    margin-top: -100px;
+    text-decoration: none;
+    border: 0;
+    border-radius: 5%;
+    height: 50px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.start-game h3{
+    color: white;
+    margin: auto;
+}
+
+/* Timer */
+
+.outer-timer{
+    border: solid white;
+    border-width: 1px;
+    height: 30px;
+    width: 200px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 100px;
+}
+
+.inner-timer{
+    width: 100%;
+    height: 30px;
+    background: white;
+    transition-timing-function: linear;
+}
